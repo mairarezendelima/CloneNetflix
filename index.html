@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="estilos/est.css">
+
+    <!-- Responsividade -->
+    <link rel="stylesheet" href="estilos/responsividade.css">
+    
+    <!-- Owl CSS - Arquivos CSS retirados da pasta zip, baixada do site owlcarousel -->
+    <link rel="stylesheet" href="estilos/owl_estilos/owl.carousel.min.css">
+    <link rel="stylesheet" href="estilos/owl_estilos/owl.theme.default.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <a href="#">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="filme_principal">
+            <div class="container">
+                <h3 class="titulo">OUTLANDER</h3>
+                <p class="sinopse">Nesse conto épico, um guerreiro e uma enfermeira vivem uma paixão avassaladora, mas 200 anos os separam.</p>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fas fa-play"></i> <!-- Ícone de play dentro do botão -->
+                        Assistir agora
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i> <!-- Ícone de informações dentro do botão -->
+                        Mais informações
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme"> <!-- Tema padrão -->
+            <div class="item">
+                <img class="box-filme" src="imagens/amelie.jpg" alt="Amelie Poulain">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imagens/dark.jpg" alt="Dark">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imagens/walking_dead.jpg" alt="Walking Dead">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imagens/casa_de_papel.jpg" alt="Casa de Papel">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imagens/viuva_negra.jpg" alt="Viúva Negra">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imagens/good_doctor.jpg" alt="Good Doctor">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imagens/friends.jpg" alt="Friends">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imagens/simpsons.jpg" alt="Simpsons">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imagens/fabrica_chocolate.jpg" alt="Fábrica de chocolate">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="imagens/cruella.jpg" alt="Cruella">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/2102b6a342.js" crossorigin="anonymous"></script> <!-- Ícones de play e informações dos botões são sincronizados com a internet (link externo do site fontawesome) -->
+
+    <!-- Owl JS - Arquivos JS retirados da pasta zip, baixada do site owlcarousel -->
+    <script src="script/owl/jquery.min.js"></script>
+    <script src="script/owl/owl.carousel.min.js"></script>
+
+    <!-- Ligando os dados do Owl ao arquivo de Setup -->
+    <script src="script/setup.js"></script>
+
+</body>
+</html>

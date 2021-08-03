@@ -1,0 +1,99 @@
+:root {
+    --red: red;
+    --black: black;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex; /* Deixa elementos em uma mesma linha */
+    flex-direction: row; /* Propriedade padrão */
+    align-items: center; /* Alinhamento vertical  */
+    justify-content: space-between; /* Cria espaço entre h2 e nav */
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--red);
+    font-family: 'Arial Black', 'Times New Roman';
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #a8a8a8;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+main .filme_principal {
+    font-size: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)100%), url(principal_outlander.jpg); /* Imagem principal, de fundo */
+    
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .filme_principal .titulo {
+    font-size: 60px;
+    margin-top: 15%;
+}
+
+main .filme_principal .sinopse {
+    margin-bottom: 40px;
+}
+
+main .filme_principal .botao {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+main .filme_principal .botao:hover {
+    background-color: white;
+    color: black;
+}
+
+main .filme_principal .botao i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+main .filme_principal .container {
+    max-width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes {
+    margin-top: 5px;
+}
